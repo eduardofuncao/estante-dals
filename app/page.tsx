@@ -100,7 +100,7 @@ const apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
 
 export default function Home() {
   return (
-  <main className="min-w-[640px] font-neulis bg-[url('../public/paper.svg')]">
+  <main className="min-w-[1000px] font-neulis bg-[url('../public/paper.svg')]">
 
 
       {/*navbar*/}
@@ -133,9 +133,9 @@ export default function Home() {
         </div>
         {/*rabiscos*/}
         <div className="relative col-span-2 border-l-4 border-primary">
-          <img src="stamp.svg" alt="carimbo circular com o texto 'propriedade de Dals, desde 1995'" className="absolute left-6 top-4 w-36"/>
-          <img src="sun.svg" alt="carimbo circular com o texto 'propriedade de Dals, desde 1995'" className="absolute right-0 top-[12rem] w-28"/>
-          <img src="scribbles.svg" alt="Rabiscos" className="absolute bottom-4 right-6 w-36"/>
+          <img src="stamp.svg" alt="carimbo circular com o texto 'propriedade de Dals, desde 1995'" className="absolute duration-500 ease-in-out hover:rotate-45 left-6 top-4 w-36 hover:scale-105"/>
+          <img src="sun.svg" alt="carimbo circular com o texto 'propriedade de Dals, desde 1995'" className="absolute right-0 top-[12rem] w-28 hover:scale-105 duration-500 ease-in-out"/>
+          <img src="scribbles.svg" alt="Rabiscos" className="absolute duration-500 ease-in-out bottom-4 right-6 w-36 hover:scale-105"/>
         </div>
       </div>
 
@@ -144,46 +144,38 @@ export default function Home() {
         <div className="col-span-8 pt-20 pl-2">
           <div className='ml-6 text-3xl text-primary'>nossos dates</div>
           <div className='inline-block px-2 ml-16 text-sm text-bground bg-primary/70'>Um calendário com todas as vezes que saímos juntos, principalmente de quando saímos pra comer</div>
-          <iframe src="https://embed.styledcalendar.com/#DvQW3okpp6rEncOSdL1y" title="Styled Calendar" className="ml-8 w-[70vw] h-[750px]" data-cy="calendar-embed-iframe"></iframe>
+          <iframe src="https://embed.styledcalendar.com/#DvQW3okpp6rEncOSdL1y" title="Styled Calendar" className="ml-8 w-[70vw] h-[650px]" data-cy="calendar-embed-iframe"></iframe>
           <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
-          <div className="bg-secondary/40 -mt-[32rem] ml-[50rem] w-full h-[24rem]"></div>
         </div>
         <div className="relative col-span-2 border-l-4 border-primary">
-          <img src="atena.svg" alt="carimbo circular com o texto 'propriedade de Dals, desde 1995'" className="absolute w-48 top-[12rem] left-2 -rotate-12"/>
-          <img src="hades.svg" alt="carimbo circular com o texto 'propriedade de Dals, desde 1995'" className="absolute w-64 top-[24rem] right-4 rotate-[16deg]"/>
+          <img src="atena.svg" alt="carimbo circular com o texto 'propriedade de Dals, desde 1995'" className="absolute w-48 top-[12rem] left-2 -rotate-12 hover:scale-105 duration-500 ease-in-out"/>
+          <img src="hades.svg" alt="carimbo circular com o texto 'propriedade de Dals, desde 1995'" className="absolute w-64 top-[24rem] right-5 rotate-[16deg] hover:scale-105 duration-500 ease-in-out"/>
         </div>
       </div>
 
       {/*fotos*/}
       <div className="grid grid-cols-10">
-        <div className='col-span-8 mt-2 mb-2 ml-2 mr-32 bg-secondary/40'>
-          <div className='inline px-2 ml-6 text-3xl text-bground'>momentos felizes</div>
-          <div className='flex justify-center ml-56 bg-primary/40 w-[80%]'>
+        <div className='col-span-8 mt-2 mb-2 ml-2 mr-32'>
+          <div className='px-2 ml-6 text-3xl text-primary'>momentos felizes</div>
+          <div className='flex justify-center mt-2 ml-44 pt-6 bg-secondary/40 w-[60rem] -mb-6 text-bground'>
             <div className='grid grid-cols-5 mt-2 ml-4'>
               <div className='col-span-1'>
-                <img src="fotos/campos.jpg" alt="" className='w-auto h-48' />
+                <img src="fotos/campos.svg" alt="" className='w-auto border-2 border-transparent h-72' />
                 <p className='text-center'>campos</p>
               </div>
               <div className='col-span-1'>
-                <img src="fotos/maceio.jpg" alt="" className='w-auto h-48' />
-                <p className='text-center'>campos</p>
+                <img src="fotos/formatura1.svg" alt="" className='w-auto border-2 border-transparent h-72' />
+                <p className='text-center'>formatura</p>
               </div>
               <div className='col-span-1'>
-                <img src="fotos/formatura1.jpg" alt="" className='w-auto h-48' />
-                <p className='text-center'>campos</p>
+                <img src="fotos/casal.svg" alt="" className='w-auto border-2 border-transparent h-72' />
+                <p className='text-center'>elevador</p>
               </div>
               <div className='col-span-1'>
-                <img src="fotos/casal.jpg" alt="" className='w-auto h-48' />
-                <p className='text-center'>campos</p>
-              </div>
-              <div className='col-span-1'>
-                <img src="fotos/taylor.jpg" alt="" className='w-auto h-48' />
-                <p className='text-center'>campos</p>
+                <img src="fotos/taylor.svg" alt="" className='w-auto border-2 border-transparent h-72' />
+                <p className='text-center'>taylor</p>
             </div>
           </div>
-          
-
-
           
         </div>
         </div>
@@ -192,7 +184,7 @@ export default function Home() {
       
       {/*textinho*/}
       <div className='grid grid-cols-10'>
-        <div className='flex col-span-8 mt-8 mr-16'>
+        <div className='flex col-span-8 mt-16 mr-16'>
           <div>
             <div className='ml-24 text-3xl text-primary'>textinho</div>
             <div className='ml-24 text-3xl text-primary'>textinho</div>
@@ -200,9 +192,9 @@ export default function Home() {
             <div className='ml-24 text-3xl text-primary'>textinho</div>
             <div className='ml-24 text-3xl text-primary'>textinho</div>
           </div>
-          <div className='px-2 ml-16 w-[500px] text-secondary bg-primary/30 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed iste incidunt vel magni quas, nihil quos voluptatum ratione impedit nesciunt dolore accusantium cupiditate pariatur quidem repellat illum delectus harum saepe distinctio perferendis. Optio explicabo error delectus aliquam unde cumque eius, recusandae id fuga ipsam rem nostrum, animi officia vel labore!</div>
+          <div className='px-2 ml-16 w-[500px] text-secondary bg-primary/30 '></div>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-2 border-l-4 border-primary">
 
         </div>
       </div>
@@ -210,11 +202,11 @@ export default function Home() {
 
       {/*footer*/}
       <div className="grid grid-cols-10">
-        <div className='flex items-center justify-center col-span-8 py-8 border-t-2 border-primary'>
+        <div className='flex items-center justify-center col-span-8 py-8 border-t-2 border-primary text-secondary'>
           Feito com <FontAwesomeIcon className='mx-2 text-primary' icon={faHeart}/> por Eduardo Função
         </div>
         <div className="col-span-2 border-t-2 border-l-4 border-primary">
-          <div>sidebar</div>
+          <div></div>
         </div>
       </div>
 
