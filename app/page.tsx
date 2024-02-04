@@ -197,7 +197,7 @@ export default function Home() {
           </div>
         </div>
         <div className="relative col-span-2 border-l-4 border-primary">
-          <img src="wine.svg" alt="" className='absolute w-32 duration-500 ease-in-out hover:scale-105 hover:rotate-[105deg]'/>
+          <img src="wine.svg" alt="" className='absolute w-32 duration-1000 ease-in-out hover:scale-105 hover:rotate-[105deg]'/>
           <img src="wineGlass.svg" alt="" className='absolute bottom-0 w-32 duration-500 ease-in-out right-12 hover:scale-105'/>
           <img src="blob.svg" alt="" className='absolute bottom-[5.5rem] scale-[50%] scale-y-[125%] right-[2.75rem] origin-bottom hover:scale-y-[31%] ease-in-out duration-1000'/>
         </div>
@@ -233,7 +233,12 @@ export default function Home() {
             <p className='px-2 mt-1 ml-2'>eu sempre penso que preciso me superar a cada presente. eu acho que um dia minha criatividade vai acabar por completo, mas por enquanto ainda tenho algumas ideias. eu acabo ficando fissurido nessas coisas, e esquece o essencial. Nessas últimas semanas conversei pouco com você, e muitas vezes, como você percebeu, ficava trabalhando nesse "projeto secreto" enquanto tentava manter uma conversa com você.</p>
             <p className='px-2 mt-1 ml-2'>eu não notei que, planejando o extraordinário, deixei de notar os detalhes: os sorrisos, a risada fechando os olhinhos, a conversa animada mesmo sendo madrugada e você estando cansada, cada mensagem me contando subre seu dia, os eu te amos mais sinceros.</p>
             <p className='px-2 mt-1 ml-2'>são as tulipas da vida - elas continuam crescendo mesmo depois de serem cortadas. mesmo com todos os problemas (distância, fuso horário, você gostar de friends), nossas tulipas continuam crescendo.</p>
-            <p className='px-2 mt-2 ml-2'>Te amo muito e não vejo a hora de viver tudo, agora mais de perto, com você!</p>
+            <p className='px-2 mt-2 ml-2'>te amo muito e não vejo a hora de viver tudo, agora mais de perto, com você!</p>
+            <p className='mr-4 text-right'>dudu</p>
+            <p className='px-2 mt-16 ml-2'>o código pra abrir o seu presente está escondido em algum lugar nesse site. boa sorte!</p>
+            <p className='inline-block px-1 mt-4 ml-6 cursor-pointer bg-secondary/80 text-bground peer'>dica</p>
+            <p className='z-50 inline-block ml-2 duration-1000 opacity-0 peer-active:opacity-100'>você segurou bem aquele botâo?</p>
+
           </div>
         </div>
         <div className="col-span-2 border-l-4 border-primary">
